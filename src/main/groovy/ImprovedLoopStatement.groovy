@@ -17,9 +17,21 @@ class ImprovedLoopStatement {
         do {
             i++
             println(i)
-        } while (i < 5)
+        }
+        while (i < 5)
 
             println(i)
-            assert i == 5
+        assert i == 5
+    }
+
+    void factorial() {
+        def count = 5
+        def fact = 1
+        do {
+            fact *= count--
+        }
+        while (count > 1)
+
+            println(fact)
     }
 }

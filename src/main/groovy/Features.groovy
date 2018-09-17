@@ -5,8 +5,9 @@ class Features {
         ImprovedLoopStatement improvedLoopStatement = new ImprovedLoopStatement()
         println("Example 1")
         improvedLoopStatement.enhancedClassicLoop()
-
         println("Example 2")
         improvedLoopStatement.doWhileExample()
+        println("Example 3 Factorial")
+        improvedLoopStatement.factorial()
     }
 }
