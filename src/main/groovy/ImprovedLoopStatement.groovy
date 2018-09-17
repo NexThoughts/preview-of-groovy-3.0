@@ -11,4 +11,15 @@ class ImprovedLoopStatement {
         }
         println(facts)
     }
+
+    void doWhileExample() {
+        int i = 0;
+        do {
+            i++
+            println(i)
+        } while (i < 5)
+
+            println(i)
+            assert i == 5
+    }
 }
