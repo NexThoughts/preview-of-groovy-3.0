@@ -2,7 +2,18 @@ package main.groovy
 
 class ImprovedLoopStatement {
 
-    void enhancedClassicLoop() {
+    public static void main(String[] args) {
+        println("Example 1: Enhanced Classic Loop")
+        enhancedClassicLoop()
+        println("Example 2: Do While Introduced")
+        doWhileExample()
+        println("Example 3: Factorial using Do While")
+        factorial()
+        println("Example 4: Multi-Assignment in For Loop")
+        multipleAssignmentInLoop()
+    }
+
+    static void enhancedClassicLoop() {
         def facts = []
         def count = 5
         println("??????????")
@@ -12,7 +23,7 @@ class ImprovedLoopStatement {
         println(facts)
     }
 
-    void doWhileExample() {
+    static void doWhileExample() {
         int i = 0;
         do {
             i++
@@ -24,7 +35,7 @@ class ImprovedLoopStatement {
         assert i == 5
     }
 
-    void factorial() {
+    static void factorial() {
         def count = 5
         def fact = 1
         do {
@@ -35,9 +46,10 @@ class ImprovedLoopStatement {
             println(fact)
     }
 
-    void multipleAssignmentInLoop() {
+    static void multipleAssignmentInLoop() {
         def baNums = []
-        for (def (String u, int v) = ['bar', 42]; v < 45; u++, v++ ) {
+        for (
+        def (String u, int v) = ['bar', 42]; v < 45; u++, v++ ) {
             baNums << "$u $v"
         }
         println baNums
