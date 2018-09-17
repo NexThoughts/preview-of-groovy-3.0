@@ -34,4 +34,12 @@ class ImprovedLoopStatement {
 
             println(fact)
     }
+
+    void multipleAssignmentInLoop() {
+        def baNums = []
+        for (def (String u, int v) = ['bar', 42]; v < 45; u++, v++ ) {
+            baNums << "$u $v"
+        }
+        println baNums
+    }
 }
