@@ -9,6 +9,7 @@ class OperatorsExample {
         notInstanceOfExample()
         elvisExample()
         identityComparison()
+        safeIndexing()
     }
 
     static void notInExample() {
@@ -41,6 +42,17 @@ class OperatorsExample {
         println(cat.is(copyCat))
         println(cat === copyCat)
         println(cat !== lion)
+    }
+
+    static safeIndexing(){
+        String[] array = ['a', 'b']
+        println(array?[1])
+        array?[1] = 'c'
+        println(array?[1])
+        array = null
+        println(array?[1])
+        array?[1] = 'c'
+        println(array?[1])
     }
 }
 
