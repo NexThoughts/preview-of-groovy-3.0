@@ -4,9 +4,13 @@ import static java.util.stream.Collectors.toList
 
 class LambdaExpression {
     public static void main(String[] args) {
+        println("***** Iterating loop using forEach *****")
         example1()
+        println("***** Example of stream/filter/map/collect *****")
         example2()
+        println("***** Example of all type of variants which are in Java8 *****")
         normalVariants()
+        println("***** Example of special variants which is not in Java8 *****")
         specialVariant()
     }
 
@@ -47,8 +51,11 @@ class LambdaExpression {
     }
 
     static void specialVariant(){
+        println("Lambda Expression with default value")
         def addWithDefault = (int x, int y = 100) -> x + y
+        println("Called with two value")
         println addWithDefault(1, 200)
+        println("Called with one value")
         println addWithDefault(1)
     }
 }
