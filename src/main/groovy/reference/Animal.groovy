@@ -1,4 +1,4 @@
-package main.groovy
+package main.groovy.reference
 
 import groovy.transform.Canonical
 
